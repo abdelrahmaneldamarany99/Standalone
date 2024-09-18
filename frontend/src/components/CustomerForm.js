@@ -1,6 +1,6 @@
 import { useContext, useState } from "react";
-import { AuthContext } from "../context/AuthContext";
-import useFetch from "../hooks/useFetch";
+import { AuthContext } from "../context/AuthContext"; // provider for "user" state
+import useFetch from "../hooks/useFetch"; // custom hook to handle requests , post request for this component
 // import axios from "axios";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
@@ -10,17 +10,15 @@ const CustomerForm = () => {
 
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
-  const [number, setNumber] = useState("");
   const [storeName, setStoreName] = useState("");
+  const [number, setNumber] = useState("");
   const [address, setAddress] = useState("");
-
-  const customer = { name, email, address, number, storeName };
+  
   const {  loading, error, setError, executeFetch } = useFetch(
     "/api/customers",
     "POST",
-    customer,
+    { name, email, address, number, storeName },
     "CREATE_CUSTOMER",
-    { immediate: false }
   );
 
   const handleSubmit = async (e) => {
@@ -94,7 +92,7 @@ const CustomerForm = () => {
       <Button
         variant="primary"
         type="submit"
-        disabled={
+        disabled={loading || 
           !(
             name.trim() &&
             email.trim() &&
