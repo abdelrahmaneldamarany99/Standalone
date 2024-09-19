@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React,{ useState } from "react";
 // import { BsSearch } from "react-icons/bs";
 import CustomerDetails from "../components/CustomerDetails";
 
@@ -37,4 +37,4 @@ const Search = ({ customers }) => {
   );
 };
 
-export default Search;
+export default React.memo(Search);
