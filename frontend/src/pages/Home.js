@@ -1,4 +1,4 @@
-import { useEffect, useContext } from "react";
+import { useEffect, useContext ,memo} from "react";
 
 // components
 import CustomerDetails from "../components/CustomerDetails";
@@ -51,4 +51,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default memo(Home);
