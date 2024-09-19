@@ -48,7 +48,7 @@ export default function useFetch( url,method,body,actionType,navigateTo = "/" ) 
       setError(null);
       navigate(navigateTo);
     }
-  },[]);
+  },[url,method]);
 
   return { loading, error, setError, executeFetch };
 }
