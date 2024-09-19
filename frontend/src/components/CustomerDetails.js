@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import React,{ useContext, useState } from "react";
 import { CustomersContext } from "../context/CustomersContext";
 import { AuthContext } from "../context/AuthContext";
 import { Link } from "react-router-dom";
@@ -62,4 +62,4 @@ const CustomerDetails = ({ customer }) => {
   );
 };
 
-export default CustomerDetails;
+export default React.memo(CustomerDetails);
