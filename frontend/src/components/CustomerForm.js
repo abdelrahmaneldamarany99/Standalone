@@ -1,6 +1,7 @@
-import { useContext, useState } from "react";
+import React,{ useContext, useState } from "react";
+
 import { AuthContext } from "../context/AuthContext"; // <== this is the provider for "user" state
-import useFetch from "../hooks/useFetch"; // custom hook to handle requests , post request for this component
+import useFetch from "../hooks/useFetch"; // <== a custom hook to handle requests , post request for this component
 // import axios from "axios";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
@@ -111,4 +112,4 @@ const CustomerForm = () => {
   );
 };
 
-export default CustomerForm;
+export default React.memo(CustomerForm);
