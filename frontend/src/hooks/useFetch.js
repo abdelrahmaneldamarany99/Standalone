@@ -7,7 +7,7 @@ import { CustomersContext } from "../context/CustomersContext";
 import { AuthContext } from "../context/AuthContext";
 import { useNavigate } from "react-router-dom";
 
-export default function useFetch( url,method,body,actionType,navigateTo = "/" ) {
+export default function useFetch( url,method,customer,actionType,navigateTo = "/" ) {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
   const { dispatch } = useContext(CustomersContext);
@@ -15,14 +15,15 @@ export default function useFetch( url,method,body,actionType,navigateTo = "/" ) 
   const navigate = useNavigate()
 
   let fetchOptions;
-  if (method === "GET") {
+  if (method === "GET" || method === "DELETE") {
     fetchOptions = {
+      method,
       headers: { Authorization: `Bearer ${user.token}` },
     };
   } else {
     fetchOptions = {
       method,
-      body: JSON.stringify(body),
+      customer: JSON.stringify(customer),
       headers: {
         "Content-Type": "application/json",
         Authorization: `Bearer ${user.token}`,
