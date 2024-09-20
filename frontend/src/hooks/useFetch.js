@@ -12,7 +12,7 @@ export default function useFetch( url,method,body,actionType,navigateTo = "/" ) 
   const [error, setError] = useState(null);
   const { dispatch } = useContext(CustomersContext);
   const { user } = useContext(AuthContext);
-  const navigate = useNavigate();
+  const navigate = useNavigate()
 
   let fetchOptions;
   if (method === "GET") {
