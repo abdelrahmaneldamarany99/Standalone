@@ -1,0 +1,91 @@
+[{
+  "_id": 1,
+  "first_name": "Lukas",
+  "last_name": "Agostini",
+  "email": "lagostini0@ebay.com",
+  "number": "+1 559 257 6303",
+  "store_name": "NYSE",
+  "address": "Room 1289",
+  "isActivated": false
+}, {
+  "_id": 2,
+  "first_name": "Edeline",
+  "last_name": "Bresner",
+  "email": "ebresner1@mapquest.com",
+  "number": "+86 690 793 3428",
+  "store_name": "NYSE",
+  "address": "Apt 315",
+  "isActivated": true
+}, {
+  "_id": 3,
+  "first_name": "Granny",
+  "last_name": "Marchi",
+  "email": "gmarchi2@cpanel.net",
+  "number": "+420 336 477 1467",
+  "store_name": "NASDAQ",
+  "address": "Suite 38",
+  "isActivated": true
+}, {
+  "_id": 4,
+  "first_name": "Fee",
+  "last_name": "Spendlove",
+  "email": "fspendlove3@xing.com",
+  "number": "+1 775 319 1196",
+  "store_name": "NYSE",
+  "address": "Apt 780",
+  "isActivated": false
+}, {
+  "_id": 5,
+  "first_name": "Emmett",
+  "last_name": "Murcott",
+  "email": "emurcott4@amazon.co.jp",
+  "number": "+7 275 677 6100",
+  "store_name": "NASDAQ",
+  "address": "Apt 1681",
+  "isActivated": false
+}, {
+  "_id": 6,
+  "first_name": "Blondell",
+  "last_name": "Foulser",
+  "email": "bfoulser5@ocn.ne.jp",
+  "number": "+7 779 325 8689",
+  "store_name": "NASDAQ",
+  "address": "PO Box 32418",
+  "isActivated": true
+}, {
+  "_id": 7,
+  "first_name": "Jeanine",
+  "last_name": "Gudeman",
+  "email": "jgudeman6@kickstarter.com",
+  "number": "+86 749 613 1910",
+  "store_name": "NYSE",
+  "address": "8th Floor",
+  "isActivated": false
+}, {
+  "_id": 8,
+  "first_name": "Omar",
+  "last_name": "Turland",
+  "email": "oturland7@prlog.org",
+  "number": "+385 306 469 4961",
+  "store_name": "NASDAQ",
+  "address": "PO Box 95189",
+  "isActivated": true
+}, {
+  "_id": 9,
+  "first_name": "Korrie",
+  "last_name": "Soame",
+  "email": "ksoame8@creativecommons.org",
+  "number": "+7 699 931 6109",
+  "store_name": "NYSE",
+  "address": "Suite 67",
+  "isActivated": false
+}, {
+  "_id": 10,
+  "first_name": "Kyla",
+  "last_name": "Janton",
+  "email": "kjanton9@wired.com",
+  "number": "+994 975 612 2364",
+  "store_name": "NYSE",
+  "address": "PO Box 35371",
+  "isActivated": false
+}]
